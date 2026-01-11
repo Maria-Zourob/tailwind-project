@@ -53,6 +53,20 @@ tailwind-project/
 └── .gitignore
 
 
+## 📸 Screenshots
+
+### 🏠 Home Section
+![Home Section](screenshots/home.png)
+
+### 🥗 Services Section
+![Services Section](screenshots/services.png)
+
+### 🖼️ Gallery Section
+![Gallery Section](screenshots/gallery.png)
+
+### 📰 Latest News
+![Latest News](screenshots/news.png)
+
 
 ▶️ How to Run Locally
 
