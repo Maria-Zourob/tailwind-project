@@ -38,8 +38,6 @@ Foodhouse presents a professional food landing page that includes:
 ---
 
 ## 📁 Project Structure
-
-```text
 tailwind-project/
 │
 ├── index.html
@@ -47,12 +45,20 @@ tailwind-project/
 │   ├── background1.jpg
 │   ├── background2.svg
 │   ├── logo-foodhouse.svg
-│   ├── gallery images...
+│   └── gallery images...
+│
+├── screenshots/
+│   ├── home.png
+│   ├── services.png
+│   ├── gallery.png
+│   └── news.png
 │
 ├── README.md
 └── .gitignore
 
 
+
+```md
 ## 📸 Screenshots
 
 ### 🏠 Home Section
@@ -66,7 +72,6 @@ tailwind-project/
 
 ### 📰 Latest News
 ![Latest News](./screenshots/news.png)
-
 
 
 ▶️ How to Run Locally
