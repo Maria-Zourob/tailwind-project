@@ -38,6 +38,7 @@ Foodhouse presents a professional food landing page that includes:
 ---
 
 ## 📁 Project Structure
+```text
 tailwind-project/
 │
 ├── index.html
