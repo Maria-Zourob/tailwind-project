@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylsheet" href="./styles.css"> -->
+
+</head>
+<body class="text-sm md:text-base">
+    <style>
+        h1{
+            color: #2c2f4b;
+            font-weight: 700;
+            letter-spacing: -1;
+        }
+        h2{
+            color: #2c2f4b;
+            font-weight: 100; 
+            letter-spacing: -1;
+        }
+        h3{
+            color: #2c2f4b;
+            font-weight: 600;
+        }
+        body{
+            color: #a3a6c5;
+        }
+        #bgsection{
+            background-image: url('./images/background2.svg'),url('./images/background1.jpg');
+            background-size: cover,cover;
+            height: 100vh;
+        }
+        .container{
+            width:80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    </style>
+    <section class="bg-slate-200/40 text-neutral-800 md:fixed top-0 left-0 w-full z-50">
+        <header class=" container mx-auto py-[20px] flex justify-between items-center">
+            <img class="inline" src="./images/logo-foodhouse.svg" >
+            <ul class=" hidden md:inline-flex z-50">
+                <li><a href="#" class="px-8">About</a></li>
+                <li><a href="#" class="px-8">Events</a></li>
+                <li><a href="#" class="px-8">Menu</a></li>
+                <li><a href="#" class="px-8">Gallery</a></li>
+                <li><a href="#" class="px-8">Contact</a></li>
+            </ul>
+            <div class="md:hidden flex items-center mr-3">
+                <button id="navicon">     
+                    <svg class=" w-7 h-7 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 28 28" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <div id="mobilemenu" class="hidden">
+            <ul class=" bg-white text-center ">
+                <li><a href="#" class=" block  p-4">About</a></li>
+                <li><a href="#" class=" block p-4">Events</a></li>
+                <li><a href="#" class=" block p-4">Menu</a></li>
+                <li><a href="#" class=" block p-4">Gallery</a></li>
+                <li><a href="#" class=" block p-4">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn=document.getElementById('navicon');
+            const Menu=document.getElementById('mobilemenu');
+            btn.addEventListener('click',()=>{
+                Menu.classList.toggle('hidden');
+            })
+    
+        </script>
+    </section>
+
+    <div id="bgsection" class="">
+        <section class="container h-full mx-auto flex flex-wrap md:flex-nowrap items-center relative">
+            <div class="w-full md:w-2/5">
+                <h1 class=" text-3xl leading-none md:text-6xl md:leading-tight"> Enjoy healthy and delicious food.</h1>
+                <p> Etiam eros elit, consequat id varius vel, auctor et velit. Nulla interdum tempus felis, id venenatis
+                    enim lacinia
+                    pretium. </p>
+    
+                <div class="mx-auto w-52 text-center md:ml-0">
+                    <a href="#" class=" inline-block bg-[#2c2f4e] rounded-full py-2 md:py-4 w-full text-white mt-12">
+                        <img class="inline-block pr-3" src="./images/call.svg"> Order Now</a>
+                    <p class="text-gray-400 w-full mt-2">+12 345 678 900</p>
+                </div>
+            </div>
+            <div class=" absolute left-0 right-0 top-auto bottom-7 text-center md:text-left  md:bottom-3">
+                <a href="#"><img src="./images/twitter.svg" class=" inline w-7 mr-3 "></a>
+                <a href="#"><img src="./images/facebook.svg" class=" inline w-7 mr-3"></a>
+                <a href="#"><img src="./images/instagram.svg" class="inline w-7 mr-3"></a>
+            </div>
+        </section>
+    </div>
+    <section class="p-[5%] md:p-[10%] bg-[#fafbff]">
+        <main class="flex flex-wrap md:flex-nowrap text-center shadow-lg shadow-gray-400">
+            <div class="p-[4%] box-border w-full">
+                <img class="inline" src="./images/1.svg">
+                <h3>Quality Food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis ultricies augue.</p>
+            </div>
+            <div class="p-[4%] box-border relative w-full">
+                <div class="absolute w-60 md:w-px h-px md:h-36  top-0 right-0 left-0 md:bottom-0 md:right-auto mx:auto md:my-auto bg-slate-300 " ></div>
+                <img class="inline"  src="./images/2.svg">
+                <h3>100% Organic Guarantee</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis ultricies augue.</p>
+                <div class="absolute w-60 md:w-px h-px md:h-36 bottom-0 right-0 left-0 md:top-0 md:left-auto mx:auto md:my-auto bg-slate-300 " ></div>
+            </div>
+            <div class="p-[4%] box-border w-full">
+                <img class="inline"  src="./images/3.svg">
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis ultricies augue.</p>
+            </div>
+        </main>
+    </section>
+    <section class="flex flex-wrap md:flex-nowrap px-10 pb-14">
+        <aside >
+            <div class="grid grid-cols-2 gap-4">
+                <div><img class="rounded-lg w-[800px] h-[250px]" src="./images/g10.jpg"> </div>
+                <div><img class="rounded-lg w-[800px] h-[215px] mt-[20%] mr-[-20%]" src="./images/g17.jpg"> </div>
+                <div><img class="rounded-lg w-[800px] h-[215px] mb-[-20%]" src="./images/g16.jpg"> </div>
+                <div><img class="rounded-lg w-[800px] h-[250px]" src="./images/g11.jpg"> </div>
+            </div>
+        </aside>
+        <main class="pl-10 pt-[10%]">
+            <h1 class=" text-4xl pb-8">Discover more<br>About</h1>
+            <P class="pb-[4%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie euismod mi, in fringilla neque condimentum ut. In hac habitasse platea dictumst. Aenean sit amet tempus justo. Nulla sagittis lacinia diam, consequat sodales nibh. Etiam gravida lacus at lorem convallis, in sollicitudin ex euismod. Etiam mattis luctus mauris quis mattis.</P>
+            <P>Phasellus quis ipsum at risus blandit tristique quis vitae urna. Donec eget ligula id elit ultrices tristique ut nec est. Nunc elementum scelerisque lacus a dictum. Maecenas sit amet vestibulum ex.</P>
+        </main>
+    </section>
+            <section class="bg-[#fafafe] md:px-[20%] md:py-[10%] box-border pb-14 mx-[2%]">
+                <header>
+                    <h1 class="text-center text-4xl pb-8">Latest news</h1>
+                </header>
+                <main class="flex flex-wrap md:flex-nowrap">
+                    <div class="bg-[#ffffff]  shadow-xl shadow-gray-400 flex flex-wrap md:flex-nowrap md:mr-14 rounded-xl w-full pl-[2%] pr-[5%] mb-8 md:mb-0">
+                        <main >
+                        <p class="mb-2 mt-8 text-xs">ByEmma Jones.Jan 25, 2021</p>
+                        <h3 class="mb-2" >The multiple nutrients of citrus fruits. A powerful antioxidant.</h3>
+                        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis...</p>
+                        <h3 class="text-[#c0ca67] mb-4 text-right">Discover More</h3>
+                    </main>
+                    </div>
+                    <div class="bg-[#ffffff] shadow-xl shadow-gray-400 flex flex-wrap md:flex-nowrap  rounded-xl w-full pl-[2%] pr-[5%]">
+                        <main >
+                        <p class="mb-2 mt-8 text-xs">ByJohn Smith•Jan 18, 2021</p>
+                        <h3 class="mb-2">Why is Organic Food good for you? Benefits of Eating organic.</h3>
+                        <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis...</p>
+                        <h3 class="text-[#c0ca67] mb-4 text-right">Discover More</h3>
+                        </main>
+                    </div>
+                </main>
+            </section>
+            <section class="flex flex-wrap md:flex-nowrap items-center pb-16 md:px-[10%] mx-[5%]">
+                <div class="grid md:grid-cols-5 grid-cols-2 gap-2 mx-auto">
+                    <div><img class="rounded-lg" src="images/g10.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g11.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g12.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g13.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g14.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g15.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g16.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g17.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g18.jpg"> </div>
+                    <div><img class="rounded-lg" src="images/g19.jpg"> </div>
+                </div>
+            </section>
+</body>
+</html>
