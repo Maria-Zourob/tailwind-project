@@ -56,16 +56,17 @@ tailwind-project/
 ## 📸 Screenshots
 
 ### 🏠 Home Section
-![Home Section](screenshots/home.png)
+![Home Section](./screenshots/home.png)
 
 ### 🥗 Services Section
-![Services Section](screenshots/services.png)
+![Services Section](./screenshots/services.png)
 
 ### 🖼️ Gallery Section
-![Gallery Section](screenshots/gallery.png)
+![Gallery Section](./screenshots/gallery.png)
 
 ### 📰 Latest News
-![Latest News](screenshots/news.png)
+![Latest News](./screenshots/news.png)
+
 
 
 ▶️ How to Run Locally
